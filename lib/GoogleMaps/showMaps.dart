@@ -20,7 +20,7 @@ class _ShowMapState extends State<ShowMap> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("map"),
+        title: Text("Home town"),
       ),
       body: GoogleMap(
         markers: {placeMarker},
@@ -39,10 +39,10 @@ class _ShowMapState extends State<ShowMap> {
   Marker placeMarker = Marker(
       markerId: MarkerId("Pune"),
       position: LatLng(18.5204, 73.8567),
-      infoWindow: InfoWindow(title: "Pune City", snippet: "good morning"),
+      infoWindow: InfoWindow(title: "Pune City", snippet: "Here is city"),
       icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueRed));
   static final CameraPosition homeTownPosition = CameraPosition(
-      target: LatLng(20.988365844473467, 75.34123183846658), zoom: 20);
+      target: LatLng(20.988365844473467, 75.34123183846658), zoom: 5);
   Future<void> _goToLocation() async {
     final GoogleMapController controller = await mapController;
 

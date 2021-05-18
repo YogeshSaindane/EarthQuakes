@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_demo/GoogleMaps/showMaps.dart';
+import 'package:google_maps_demo/Quakes/QuakesApp.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: ShowMap(),
+    home: QuakesApp(),
   ));
 }
 
